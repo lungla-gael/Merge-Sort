@@ -1,4 +1,3 @@
-require 'pry'
 def merge_sorted_halves(a,b)
     c = []
     loop do
@@ -25,4 +24,5 @@ def sort(array)
         merge_sorted_halves(sort(left_half), sort(right_half))
     end
 end
-binding.pry
+
+p sort([5,2,1,3,6,4])
